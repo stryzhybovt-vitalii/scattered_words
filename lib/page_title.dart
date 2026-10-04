@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+
+class PageTitle extends StatelessWidget {
+  const PageTitle({required this.text, super.key});
+
+  final String text;
+
+  @override
+  Widget build(context) {
+    return Text(
+      text,
+      style: const TextStyle(
+        color: Color.fromARGB(255, 241, 241, 90),
+        fontSize: 24,
+        fontWeight: FontWeight.bold,
+        letterSpacing: 3,
+      ),
+    );
+  }
+}
